@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.game-box {
+    margin: 20px auto auto auto;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.452);
+}   
+.game-item {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 5rem;
+}
+.game-item:hover {
+    background-color: rgb(230, 230, 230);
+    cursor: pointer;
+}
+
+/* BOTES */
+.boxcontrols {
+    
+    border: 1px solid black;
+    position: absolute;
+    padding: 10px 15px 10px 10px;
+    box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.452);
+    
+    top: 20px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.boxcontrols > hr {
+    width: 100%;
+    background-color: #000
+}
+.botao-comecar {
+    padding: 10px;
+}
+.botao-comecar i {
+    border: 1px solid #fff;
+    padding: 3px;
+    border-radius: 3px;
+}
+.botao-comecar i:hover {
+    border: 1px solid #000;
+    cursor: pointer;
+}
+.mostrarvez {
+    padding: 10px;
+    display: none;
+}
+.botao-reiniciar {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+.botao-reiniciar:hover {
+    cursor: pointer;
+    border: 1px solid #000;
+}
+.creditos {
+    font-size: 0.9rem;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.creditos i {
+    margin-right: 8px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/fdd80f1112.js"></script>
+</head>
+<body>
+
+    <div class="boxcontrols">
+        <span class="botao-comecar">
+            Começar com
+            <i class="fa fa-times" onclick="comecar('X')"></i>
+            ou
+            <i class="fa fa-circle-o" onclick="comecar('0')"></i>
+        </span>
+        <span class="mostrarvez">
+            Vez do:
+            <span>
+                <i class="fa fa-times"></i>
+                <i class="fa fa-circle-o"></i>
+            </span>
+        </span>
+
+        <hr>
+
+        <span class="botao-reiniciar" onclick="resetar()">
+            <i class="fa fa-refresh"></i>
+            Reiniciar
+        </span>
+        <br>
+        <br>
+        <br>
+        <span class="creditos">
+            <i class="fa fa-desktop"></i>
+             Feito por Jonathan
+        </span>
+    </div>
+
+    <div class="game-box">
+        <div class="game-item a1" jogou=""></div>
+        <div class="game-item a2" jogou=""></div>
+        <div class="game-item a3" jogou=""></div>
+        <div class="game-item b1" jogou=""></div>
+        <div class="game-item b2" jogou=""></div>
+        <div class="game-item b3" jogou=""></div>
+        <div class="game-item c1" jogou=""></div>
+        <div class="game-item c2" jogou=""></div>
+        <div class="game-item c3" jogou=""></div>
+    </div>
+
+    
+
+    
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
