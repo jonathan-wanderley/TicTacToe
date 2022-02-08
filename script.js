@@ -1,5 +1,19 @@
 let vez = '';
 
+//TEMAS
+let botao = document.querySelector('.botao-tema i');
+document.querySelector('.botao-tema').addEventListener('click', ()=> {
+    if (!botao.classList.contains('fa-toggle-on')) {
+        botao.classList.remove('fa-toggle-off');
+        botao.classList.add('fa-toggle-on')
+        mudarEscuro();
+    } else {
+        botao.classList.remove('fa-toggle-on');
+        botao.classList.add('fa-toggle-off')
+        mudarClaro();
+    }
+})
+
 function comecar(item) {
     vez = item;
     document.querySelector('.botao-comecar').style.display = 'none';
@@ -122,4 +136,37 @@ function resetar() {
         
         document.querySelector('.mostrarvez').style.display = 'none';
     }
+}
+
+function mudarEscuro() {
+    document.querySelector('body').style.backgroundColor = 'rgb(39, 39, 39)';
+    document.querySelectorAll('.game-item, .boxcontrols').forEach((item, index)=>{
+        document.querySelectorAll('.game-item, .boxcontrols')[index].style.color = '#fff'
+    });
+    document.querySelectorAll('.a').forEach((item, index)=>{
+        document.querySelectorAll('.a')[index].classList.remove('temaclaro')
+        document.querySelectorAll('.a')[index].classList.add('temaescuro')
+    });
+    document.querySelectorAll('.game-item').forEach((item,index)=>{
+        document.querySelectorAll('.game-item')[index].style.borderColor = '#fff';
+        document.querySelectorAll('.game-item')[index].classList.remove('hclaro-item');
+        document.querySelectorAll('.game-item')[index].classList.add('hescuro-item');
+    })
+}
+
+function mudarClaro() {
+    document.querySelector('body').style.backgroundColor = '#fff';
+    document.querySelectorAll('.game-item, .boxcontrols').forEach((item, index)=>{
+        document.querySelectorAll('.game-item, .boxcontrols')[index].style.color = 'rgb(37, 37, 37)'
+    });
+    document.querySelectorAll('.a').forEach((item, index)=>{
+        document.querySelectorAll('.a')[index].classList.remove('temaescuro')
+        document.querySelectorAll('.a')[index].classList.add('temaclaro')
+    });
+    document.querySelectorAll('.game-item').forEach((item,index)=>{
+        document.querySelectorAll('.game-item')[index].style.borderColor = 'rgb(170, 170, 170)';
+        document.querySelectorAll('.game-item')[index].classList.remove('hescuro-item');
+        document.querySelectorAll('.game-item')[index].classList.add('hclaro-item');
+    })
+    
 }

@@ -11,11 +11,14 @@
 <body>
 
     <div class="boxcontrols">
+        <span>
+            <h3>Jogo da Velha</h3>
+        </span>
         <span class="botao-comecar">
             Começar com
-            <i class="fa fa-times" onclick="comecar('X')"></i>
+            <i class="fa fa-times temaclaro a" onclick="comecar('X')"></i>
             ou
-            <i class="fa fa-circle-o" onclick="comecar('0')"></i>
+            <i class="fa fa-circle-o temaclaro a" onclick="comecar('0')"></i>
         </span>
         <span class="mostrarvez">
             Vez do:
@@ -25,32 +28,34 @@
             </span>
         </span>
 
-        <hr>
 
-        <span class="botao-reiniciar" onclick="resetar()">
+        <span class="botao-reiniciar temaclaro a" onclick="resetar()">
             <i class="fa fa-refresh"></i>
             Reiniciar
         </span>
-        
+        <span class="botao-tema temaclaro a">
+            <p>LIGHT</p> <i class="fa fa-toggle-off fa-lg" aria-hidden="true"></i> <p>DARK</p>
+        </span>
+
         <br>
         <br>
         <br>
         <span class="creditos">
             <i class="fa fa-desktop"></i>
-             Feito por Jonathan
+            Feito por Jonathan
         </span>
     </div>
 
     <div class="game-box">
-        <div class="game-item a1" jogou=""></div>
-        <div class="game-item a2" jogou=""></div>
-        <div class="game-item a3" jogou=""></div>
-        <div class="game-item b1" jogou=""></div>
-        <div class="game-item b2" jogou=""></div>
-        <div class="game-item b3" jogou=""></div>
-        <div class="game-item c1" jogou=""></div>
-        <div class="game-item c2" jogou=""></div>
-        <div class="game-item c3" jogou=""></div>
+        <div class="game-item a1 hclaro-item" jogou=""></div>
+        <div class="game-item a2 hclaro-item" jogou=""></div>
+        <div class="game-item a3 hclaro-item" jogou=""></div>
+        <div class="game-item b1 hclaro-item" jogou=""></div>
+        <div class="game-item b2 hclaro-item" jogou=""></div>
+        <div class="game-item b3 hclaro-item" jogou=""></div>
+        <div class="game-item c1 hclaro-item" jogou=""></div>
+        <div class="game-item c2 hclaro-item" jogou=""></div>
+        <div class="game-item c3 hclaro-item" jogou=""></div>
     </div>
 
     
