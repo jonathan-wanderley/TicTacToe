@@ -25,7 +25,7 @@ for(let i=0; i < gameitems.length; i++) {
                     setTimeout(() => {
                         alert('O ganhador é '+verificarSeGanhou())
                         resetar()
-                    }, 500);
+                    }, 100);
                 } else if (verificarEmpate()) {
                     setTimeout(()=> {
                         alert('Ops! Infelizmente o jogo saiu empatado :C')
